@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core System Colors */
+    --color-background: #FAFAFA; /* gray-50 */
+    --color-foreground: #2C2C2C; /* gray-800 */
+    --color-border: #E5E5E5; /* gray-200 */
+    --color-input: #FFFFFF; /* white */
+    --color-ring: #FF8C00; /* orange-500 */
+    
+    /* Card & Surface Colors */
+    --color-card: #FFFFFF; /* white */
+    --color-card-foreground: #2C2C2C; /* gray-800 */
+    --color-popover: #FFFFFF; /* white */
+    --color-popover-foreground: #2C2C2C; /* gray-800 */
+    
+    /* Muted Colors */
+    --color-muted: #F5F5F5; /* gray-100 */
+    --color-muted-foreground: #666666; /* gray-500 */
+    
+    /* Brand Colors */
+    --color-primary: #FF8C00; /* orange-500 */
+    --color-primary-foreground: #FFFFFF; /* white */
+    --color-secondary: #FFD700; /* yellow-400 */
+    --color-secondary-foreground: #2C2C2C; /* gray-800 */
+    
+    /* Accent Colors */
+    --color-accent: #8B4513; /* brown-600 */
+    --color-accent-foreground: #FFFFFF; /* white */
+    
+    /* Status Colors */
+    --color-success: #10B981; /* emerald-500 */
+    --color-success-foreground: #FFFFFF; /* white */
+    --color-warning: #F59E0B; /* amber-500 */
+    --color-warning-foreground: #FFFFFF; /* white */
+    --color-error: #EF4444; /* red-500 */
+    --color-error-foreground: #FFFFFF; /* white */
+    --color-destructive: #EF4444; /* red-500 */
+    --color-destructive-foreground: #FFFFFF; /* white */
+    
+    /* Shadow Variables */
+    --shadow-card: 0 2px 8px rgba(44, 44, 44, 0.1);
+    --shadow-modal: 0 4px 16px rgba(44, 44, 44, 0.15);
+    
+    /* Animation Variables */
+    --animation-fast: 0.2s ease-out;
+    --animation-normal: 0.3s ease-in-out;
+    --animation-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .font-caption {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .modal-shadow {
+    box-shadow: var(--shadow-modal);
+  }
+  
+  .transition-fast {
+    transition: all var(--animation-fast);
+  }
+  
+  .transition-normal {
+    transition: all var(--animation-normal);
+  }
+  
+  .transition-spring {
+    transition: all 0.3s var(--animation-spring);
+  }
+}
