@@ -5,7 +5,7 @@ import Button from '../../../components/ui/Button';
 
 const ServicesOverview = () => {
   const services = [
-    {
+{
       id: 1,
       title: "Laser Cutting & Engraving",
       description: "Precision laser cutting for metals, plastics, and composites with tolerances up to ±0.1mm. Perfect for intricate designs and high-volume production.",
@@ -16,12 +16,12 @@ const ServicesOverview = () => {
     },
     {
       id: 2,
-      title: "Metal Fabrication",
-      description: "Complete metal fabrication services including welding, bending, and assembly. From prototypes to production runs.",
+      title: "Versa Laser",
+      description: "Advanced CO2 laser cutting and engraving with precision optics. Accommodates substrates up to 24x16 inches with microscale cut widths.",
       icon: "Wrench",
-      features: ["Custom Welding", "Sheet Metal Work", "Assembly Services"],
+      features: ["CO2 Laser Technology", "Precision Optics", "Multi-Material Support"],
       color: "from-accent to-amber-700",
-      serviceId: "metal-fabrication"
+      serviceId: "versa-laser"
     },
     {
       id: 3,
@@ -43,21 +43,21 @@ const ServicesOverview = () => {
     },
     {
       id: 5,
-      title: "Custom Fabrication",
-      description: "Rapid prototyping services to bring your ideas to life quickly. Perfect for product development and testing phases.",
+      title: "UV Printing",
+      description: "Instant-curing UV printing on diverse materials including plastics, metals, ceramics, glass, and wood. Perfect for custom products and promotional items.",
       icon: "Lightbulb",
-      features: ["Fast Turnaround", "Multiple Materials", "Design Support"],
+      features: ["Multiple Materials", "Instant Curing", "Custom Products"],
       color: "from-purple-600 to-purple-800",
-      serviceId: "welding-services"
+      serviceId: "uv-printing"
     },
     {
       id: 6,
       title: "Large Format Printing",
-      description: "Comprehensive industrial manufacturing solutions including jigs, fixtures, and custom machinery components.",
+      description: "High-impact wide format printing for banners, posters, and signage. Capable of printing up to 16' x 150' seamless with exceptional clarity.",
       icon: "Cog",
-      features: ["Custom Tooling", "Automation Parts", "Quality Assurance"],
+      features: ["Wide Format Capability", "High Resolution", "Durable Materials"],
       color: "from-red-600 to-red-800",
-      serviceId: "powder-coating"
+      serviceId: "large-format-printing"
     }
   ];
 

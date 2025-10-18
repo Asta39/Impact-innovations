@@ -56,7 +56,6 @@ const AboutTeamPages = () => {
         <CertificationsSection />
 
         {/* Facility Tour */}
-        <FacilityTour />
 
         {/* Call to Action */}
         <CallToAction />

@@ -18,7 +18,7 @@ const ConfirmationModal = ({ isOpen, onClose, quoteData }) => {
 
   const handleWhatsAppShare = () => {
     const message = `Hi Impact Innovations! I just submitted a quote request (Ref: ${quoteReference}) for ${quoteData.selectedService}. Looking forward to your response!`;
-    window.open(`https://wa.me/254700123456?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/254708071047?text=${encodeURIComponent(message)}`, '_blank');
   };
 
   const handleEmailSupport = () => {

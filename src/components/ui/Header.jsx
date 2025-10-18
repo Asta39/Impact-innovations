@@ -1,7 +1,14 @@
+// Make sure to provide the whole completed code no trancuating or commenting out any code ok
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Icon from '../AppIcon';
 import Button from './Button';
+// --- CHANGE START: Import your logo file ---
+// Make sure the path is correct. If your Header.jsx is in 'src/components/ui',
+// this path goes up two levels to 'src/' and then into 'assets/'.
+import companyLogo from '../../assets/logo1-02.png'; 
+// --- CHANGE END ---
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,10 +26,11 @@ const Header = () => {
       dropdownItems: [
         { label: 'Laser Cutting & Engraving', path: '/service-detail-pages?service=laser-cutting', icon: 'Zap' },
         { label: 'CNC Routing', path: '/service-detail-pages?service=cnc-machining', icon: 'Settings' },
-        { label: 'Signage Solutions', path: '/service-detail-pages?service=sheet-metal', icon: 'Type' },
-        { label: 'Large Format Printing', path: '/service-detail-pages?service=powder-coating', icon: 'Printer' },
-        { label: 'Custom Fabrication', path: '/service-detail-pages?service=welding-services', icon: 'Wrench' },
-        { label: 'Metal Fabrication', path: '/service-detail-pages?service=metal-fabrication', icon: 'Hammer' }
+        { label: 'Signage Solutions', path: '/service-detail-pages?service=custom-signage', icon: 'Type' },
+        { label: 'Large Format Printing', path: '/service-detail-pages?service=large-format-printing', icon: 'Printer' },
+        { label: 'UV Printing', path: '/service-detail-pages?service=uv-printing', icon: 'Wrench' },
+        { label: 'Fibre Laser', path: '/service-detail-pages?service=fibre-laser-cutting', icon: 'Hammer' },
+        { label: 'Versa Laser Engraving', path: '/service-detail-pages?service=versa-laser-engraving', icon: 'Zap' }
       ]
     },
     { label: 'Portfolio', path: '/portfolio-gallery', icon: 'Image' },
@@ -52,7 +60,6 @@ const Header = () => {
     };
   }, [isMobileMenuOpen]);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (isServicesDropdownOpen && !event.target.closest('.services-dropdown')) {
@@ -81,11 +88,11 @@ const Header = () => {
   };
 
   const handlePhoneClick = () => {
-    window.location.href = 'tel:+254700123456';
+    window.location.href = 'tel:+254790694771';
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/254700123456', '_blank');
+    window.open('https://wa.me/254790694771', '_blank');
   };
 
   return (
@@ -101,9 +108,13 @@ const Header = () => {
               className="flex items-center space-x-3 transition-fast hover:opacity-80"
               onClick={closeMobileMenu}
             >
-              <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <Icon name="Zap" size={24} color="white" strokeWidth={2.5} />
-              </div>
+              {/* --- CHANGE START: Replaced Icon with Logo Image --- */}
+              <img 
+                src={companyLogo} 
+                alt="Impact Innovations Logo" 
+                className="w-10 h-10 lg:w-12 lg:h-12 object-contain"
+              />
+              {/* --- CHANGE END --- */}
               <div className="hidden sm:block">
                 <h1 className="text-xl lg:text-2xl font-heading font-bold text-foreground">
                   Impact Innovations
@@ -137,7 +148,6 @@ const Header = () => {
                         <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-primary rounded-full" />
                       )}
                       
-                      {/* Dropdown Menu */}
                       {isServicesDropdownOpen && (
                         <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-lg card-shadow border border-border py-2 z-50">
                           <div className="px-4 py-2 border-b border-border">
@@ -227,20 +237,21 @@ const Header = () => {
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
         <div className="lg:hidden fixed inset-0 z-50">
-          {/* Backdrop */}
           <div 
             className="absolute inset-0 bg-black/50 backdrop-blur-sm"
             onClick={closeMobileMenu}
           />
           
-          {/* Menu Panel */}
           <div className="absolute right-0 top-0 h-full w-80 max-w-[85vw] bg-white animate-slide-in-right">
-            {/* Menu Header */}
             <div className="flex items-center justify-between p-5 border-b border-border">
               <div className="flex items-center space-x-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                  <Icon name="Zap" size={16} color="white" strokeWidth={2.5} />
-                </div>
+                 {/* --- CHANGE START: Replaced Icon with Logo Image in Mobile Menu --- */}
+                 <img 
+                    src={companyLogo} 
+                    alt="Impact Innovations Logo" 
+                    className="w-8 h-8 object-contain"
+                  />
+                 {/* --- CHANGE END --- */}
                 <div>
                   <h2 className="text-lg font-heading font-semibold text-foreground">
                     Impact Innovations
@@ -256,9 +267,7 @@ const Header = () => {
               </button>
             </div>
 
-            {/* Menu Content */}
             <div className="flex flex-col h-full">
-              {/* Navigation Links */}
               <nav className="flex-1 px-5 py-6">
                 <ul className="space-y-2">
                   {navigationItems.map((item) => (
@@ -280,7 +289,6 @@ const Header = () => {
                             />
                             <span className="font-medium">{item.label}</span>
                           </Link>
-                          {/* Mobile Dropdown Items */}
                           <div className="ml-4 mt-2 space-y-1">
                             {item.dropdownItems.map((dropdownItem) => (
                               <Link
@@ -317,7 +325,6 @@ const Header = () => {
                 </ul>
               </nav>
 
-              {/* Mobile Contact Actions */}
               <div className="p-5 border-t border-border space-y-3">
                 <Button
                   variant="outline"
@@ -350,7 +357,6 @@ const Header = () => {
         </div>
       )}
 
-      {/* Sticky Contact Bar - Desktop Only */}
       <div className="hidden lg:block fixed bottom-6 right-6 z-40">
         <div className="flex items-center space-x-3 bg-white card-shadow rounded-full p-2">
           <button

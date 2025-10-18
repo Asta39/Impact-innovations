@@ -9,12 +9,12 @@ const IndustriesServed = () => {
   const industries = [
     {
       id: 1,
-      name: "Automotive",
-      description: "Precision parts for vehicle manufacturing and repair services across Kenya.",
+      name: "Tenders",
+      description: "Government and private sector tender fabrication services across Kenya and East Africa.",
       image: "https://images.pexels.com/photos/190574/pexels-photo-190574.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       icon: "Car",
-      projects: "350+ Projects",
-      specialties: ["Engine Components", "Body Parts", "Custom Modifications"]
+      projects: "35+ Projects",
+      specialties: ["Government Contracts", "Private Tenders", "Procurement Services"]
     },
     {
       id: 2,
@@ -22,7 +22,7 @@ const IndustriesServed = () => {
       description: "Structural steel, architectural elements, and custom building components.",
       image: "https://images.pexels.com/photos/162539/architecture-building-construction-work-162539.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       icon: "Building",
-      projects: "500+ Projects",
+      projects: "50+ Projects",
       specialties: ["Structural Steel", "Railings", "Architectural Features"]
     },
     {
@@ -31,35 +31,35 @@ const IndustriesServed = () => {
       description: "Eye-catching displays, signage, and retail fixtures that drive business.",
       image: "https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       icon: "Store",
-      projects: "800+ Projects",
+      projects: "80+ Projects",
       specialties: ["LED Signage", "Display Stands", "Branding Solutions"]
     },
     {
       id: 4,
-      name: "Manufacturing",
-      description: "Industrial equipment, machinery parts, and production line components.",
+      name: "Institutions",
+      description: "Educational facilities, schools, universities, and institutional infrastructure components.",
       image: "https://images.pexels.com/photos/1108101/pexels-photo-1108101.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       icon: "Factory",
-      projects: "400+ Projects",
-      specialties: ["Machine Parts", "Tooling", "Production Equipment"]
+      projects: "40+ Projects",
+      specialties: ["Educational Facilities", "Laboratory Signs", "Institutional Fixtures"]
     },
     {
       id: 5,
-      name: "Agriculture",
-      description: "Farm equipment, irrigation systems, and agricultural machinery components.",
+      name: "Events",
+      description: "Custom event fabrication, staging, production design, and temporary structures for events.",
       image: "https://images.pexels.com/photos/1595104/pexels-photo-1595104.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       icon: "Wheat",
-      projects: "200+ Projects",
-      specialties: ["Farm Equipment", "Irrigation Parts", "Storage Solutions"]
+      projects: "50+ Projects",
+      specialties: ["Event Staging", "Custom Backdrops", "Production Design"]
     },
     {
       id: 6,
-      name: "Healthcare",
-      description: "Medical equipment components and healthcare facility infrastructure.",
+      name: "Government Facilities",
+      description: "Government building components, public facility infrastructure, and institutional projects.",
       image: "https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
       icon: "Heart",
-      projects: "150+ Projects",
-      specialties: ["Medical Devices", "Hospital Equipment", "Sterilization Systems"]
+      projects: "15+ Projects",
+      specialties: ["Public Buildings", "Government Infrastructure", "Security Systems"]
     }
   ];
 
@@ -238,7 +238,7 @@ const IndustriesServed = () => {
             </p>
             <div className="flex items-center justify-center gap-2 text-primary">
               <Icon name="Phone" size={20} />
-              <span className="font-medium">+254 700 123 456</span>
+              <span className="font-medium">+254 708 071 047</span>
             </div>
           </div>
         </div>

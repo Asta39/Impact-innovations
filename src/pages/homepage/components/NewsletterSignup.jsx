@@ -158,7 +158,7 @@ const NewsletterSignup = () => {
               <div className="flex items-center gap-6 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Icon name="Users" size={16} />
-                  <span>2,000+ Subscribers</span>
+                  <span>200+ Subscribers</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Icon name="Shield" size={16} />
@@ -238,7 +238,7 @@ const NewsletterSignup = () => {
                         ))}
                       </div>
                       <div className="text-sm text-muted-foreground">
-                        <span className="font-semibold text-foreground">2,000+</span> professionals
+                        <span className="font-semibold text-foreground">200+</span> professionals
                       </div>
                     </div>
                   </div>

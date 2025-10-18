@@ -6,21 +6,21 @@ const TrustIndicators = () => {
   const stats = [
     {
       id: 1,
-      value: "15+",
+      value: "10+",
       label: "Years Experience",
       description: "Serving Nairobi since 2009",
       icon: "Calendar"
     },
     {
       id: 2,
-      value: "2,500+",
+      value: "250+",
       label: "Projects Completed",
       description: "Successful deliveries",
       icon: "CheckCircle"
     },
     {
       id: 3,
-      value: "500+",
+      value: "300+",
       label: "Happy Clients",
       description: "Across Kenya",
       icon: "Users"

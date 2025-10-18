@@ -5,7 +5,7 @@ import Image from '../../../components/AppImage';
 
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/254700123456', '_blank');
+    window.open('https://wa.me/254708071047', '_blank');
   };
 
   return (
@@ -44,12 +44,12 @@ const HeroSection = () => {
           {/* Key Stats */}
           <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8 mb-10 text-white">
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-primary">15+</div>
+              <div className="text-2xl md:text-3xl font-bold text-primary">10+</div>
               <div className="text-sm text-gray-300">Years Experience</div>
             </div>
             <div className="w-px h-12 bg-gray-600 hidden sm:block" />
             <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-primary">2,500+</div>
+              <div className="text-2xl md:text-3xl font-bold text-primary">250+</div>
               <div className="text-sm text-gray-300">Projects Completed</div>
             </div>
             <div className="w-px h-12 bg-gray-600 hidden sm:block" />
@@ -91,10 +91,10 @@ const HeroSection = () => {
             <span className="text-sm">Need immediate assistance?</span>
             <div className="flex items-center gap-4">
               <a
-                href="tel:+254700123456"
+                href="tel:+254708071047"
                 className="flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
               >
-                <span className="text-sm font-medium">+254 700 123 456</span>
+                <span className="text-sm font-medium">+254 708 071047</span>
               </a>
               <span className="text-gray-500">or</span>
               <button

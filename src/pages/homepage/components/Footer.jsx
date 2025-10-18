@@ -1,6 +1,13 @@
+// Make sure to provide the whole completed code no trancuating or commenting out any code ok
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Icon from '../../../components/AppIcon';
+// --- CHANGE START: Import your logo file ---
+// Adjust the path if necessary. This path assumes Footer.jsx is three levels
+// deep from the src folder (e.g., src/components/layout/Footer.jsx).
+import companyLogo from '../../../assets/logo1-02.png';
+// --- CHANGE END ---
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -32,7 +39,7 @@ const Footer = () => {
   ];
 
   const handlePhoneClick = () => {
-    window.location.href = 'tel:+254700123456';
+    window.location.href = 'tel:+254708107047';
   };
 
   const handleEmailClick = () => {
@@ -40,7 +47,7 @@ const Footer = () => {
   };
 
   const handleWhatsAppClick = () => {
-    window.open('https://wa.me/254700123456', '_blank');
+    window.open('https://wa.me/254708107047', '_blank');
   };
 
   return (
@@ -51,9 +58,13 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link to="/homepage" className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-to-br from-primary to-accent rounded-lg flex items-center justify-center">
-                <Icon name="Zap" size={24} color="white" strokeWidth={2.5} />
-              </div>
+              {/* --- CHANGE START: Replaced Icon with Logo Image --- */}
+              <img 
+                src={companyLogo} 
+                alt="Impact Innovations Logo" 
+                className="w-12 h-12 object-contain"
+              />
+              {/* --- CHANGE END --- */}
               <div>
                 <h3 className="text-xl font-heading font-bold">
                   Impact Innovations
@@ -76,7 +87,7 @@ const Footer = () => {
                 className="flex items-center gap-3 text-gray-300 hover:text-primary transition-colors"
               >
                 <Icon name="Phone" size={18} />
-                <span>+254 700 123 456</span>
+                <span>+254 708 071 047</span>
               </button>
               
               <button
@@ -89,7 +100,7 @@ const Footer = () => {
               
               <div className="flex items-start gap-3 text-gray-300">
                 <Icon name="MapPin" size={18} className="mt-1 flex-shrink-0" />
-                <span>Industrial Area, Nairobi<br />P.O. Box 12345-00100<br />Nairobi, Kenya</span>
+                <span>Kweria Road, Nairobi<br />P.O. Box 12345-00100<br />Nairobi, Kenya</span>
               </div>
             </div>
           </div>
@@ -185,7 +196,7 @@ const Footer = () => {
               loading="lazy"
               title="Impact Innovations Location"
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps?q=-1.3032,36.8856&z=14&output=embed"
+              src="https://www.google.com/maps?q=-1.2799832217617129, 36.82309756559095&z=14&output=embed"
               className="border-0"
             />
           </div>
@@ -198,7 +209,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-gray-400 text-sm text-center md:text-left">
               © {currentYear} Impact Innovations. All rights reserved. | 
-              <span className="ml-1">Precision Manufacturing Since 2009</span>
+              <span className="ml-1">Precision Manufacturing Since 2015</span>
             </div>
             
             <div className="flex items-center gap-6 text-sm">

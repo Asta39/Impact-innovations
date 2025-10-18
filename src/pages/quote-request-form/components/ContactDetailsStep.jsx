@@ -33,7 +33,7 @@ const ContactDetailsStep = ({
 
     if (!contactDetails.phone?.trim()) {
       newErrors.phone = 'Phone number is required';
-    } else if (!/^(\+254|0)[17]\d{8}$/.test(contactDetails.phone.replace(/\s/g, ''))) {
+    } else if (!/^(\+254[17]\d{8}|0[17]\d{8})$/.test(contactDetails.phone.replace(/\s/g, ''))) {
       newErrors.phone = 'Please enter a valid Kenyan phone number';
     }
 
@@ -67,10 +67,20 @@ const ContactDetailsStep = ({
   };
 
   const formatPhoneNumber = (value) => {
-    // Remove all non-digits
-    const digits = value.replace(/\D/g, '');
+    // Remove all non-digits and plus sign
+    const cleaned = value.replace(/[^\d+]/g, '');
     
-    // Format based on length
+    // Handle +254 format
+    if (cleaned.startsWith('+254')) {
+      const digits = cleaned.substring(4);
+      if (digits.length <= 3) return `+254 ${digits}`;
+      if (digits.length <= 6) return `+254 ${digits.slice(0, 3)} ${digits.slice(3)}`;
+      if (digits.length <= 9) return `+254 ${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6)}`;
+      return `+254 ${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6, 9)}`;
+    }
+    
+    // Handle 0 format
+    const digits = cleaned.replace(/^\+?254/, '');
     if (digits.length <= 3) return digits;
     if (digits.length <= 6) return `${digits.slice(0, 3)} ${digits.slice(3)}`;
     if (digits.length <= 9) return `${digits.slice(0, 3)} ${digits.slice(3, 6)} ${digits.slice(6)}`;

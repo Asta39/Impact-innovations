@@ -13,7 +13,7 @@ const HeroSection = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center px-4 py-2 bg-primary/10 rounded-full">
                 <Icon name="Award" size={16} color="var(--color-primary)" className="mr-2" />
-                <span className="text-sm font-medium text-primary">15+ Years of Excellence</span>
+                <span className="text-sm font-medium text-primary">7+ Years of Excellence</span>
               </div>
               
               <h1 className="text-4xl lg:text-5xl font-heading font-bold text-foreground leading-tight">
@@ -22,22 +22,22 @@ const HeroSection = () => {
               </h1>
               
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Since 2009, Impact Innovations has been Nairobi's premier laser cutting and fabrication specialist, transforming raw materials into precision-engineered solutions that drive business success across Kenya.
+                Since 2018, Impact Innovations has been Nairobi's premier laser cutting and fabrication specialist, transforming raw materials into precision-engineered solutions that drive business success across Kenya.
               </p>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-heading font-bold text-primary">2,500+</div>
+                <div className="text-3xl font-heading font-bold text-primary">250+</div>
                 <div className="text-sm text-muted-foreground">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-heading font-bold text-primary">150+</div>
+                <div className="text-3xl font-heading font-bold text-primary">100+</div>
                 <div className="text-sm text-muted-foreground">Happy Clients</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-heading font-bold text-primary">15+</div>
+                <div className="text-3xl font-heading font-bold text-primary">7+</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
             </div>
@@ -53,15 +53,7 @@ const HeroSection = () => {
               >
                 Get Free Quote
               </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                iconName="Play"
-                iconPosition="left"
-                className="flex-1 sm:flex-none"
-              >
-                Watch Our Story
-              </Button>
+             
             </div>
           </div>
 

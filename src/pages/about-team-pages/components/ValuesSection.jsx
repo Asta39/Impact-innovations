@@ -18,7 +18,7 @@ const ValuesSection = () => {
       description: "We continuously invest in cutting-edge technology and innovative processes to stay ahead of industry trends.",
       icon: "Lightbulb",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=300&fit=crop",
-      stats: { value: "15+", label: "Tech Upgrades/Year" }
+      stats: { value: "7+", label: "Tech Upgrades/Year" }
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const ValuesSection = () => {
       description: "Our clients\' success is our success. We build lasting partnerships through exceptional service and reliable delivery.",
       icon: "Heart",
       image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop",
-      stats: { value: "150+", label: "Happy Clients" }
+      stats: { value: "50+", label: "Happy Clients" }
     },
     {
       id: 4,
@@ -46,17 +46,17 @@ const ValuesSection = () => {
     },
     {
       icon: "Users",
-      title: "150+ Satisfied Clients",
+      title: "50+ Satisfied Clients",
       description: "Trusted by businesses across Kenya"
     },
     {
       icon: "Clock",
-      title: "15 Years Experience",
+      title: "7 Years Experience",
       description: "Proven track record in manufacturing"
     },
     {
       icon: "CheckCircle",
-      title: "2,500+ Projects Completed",
+      title: "250+ Projects Completed",
       description: "Successfully delivered on time"
     }
   ];
@@ -169,7 +169,7 @@ const ValuesSection = () => {
                   <Icon name="Zap" size={20} color="white" strokeWidth={2.5} />
                 </div>
                 <div className="text-left">
-                  <div className="font-heading font-semibold text-foreground">David Kimani</div>
+                  <div className="font-heading font-semibold text-foreground">Macharia Misheck</div>
                   <div className="text-sm text-muted-foreground">Founder & CEO</div>
                 </div>
               </div>

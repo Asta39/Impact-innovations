@@ -22,12 +22,12 @@ const ProjectDetailsStep = ({
       { value: 'wood', label: 'Wood/MDF', description: '3-30mm thickness' },
       { value: 'other', label: 'Other Material', description: 'Specify in requirements' }
     ],
-    'metal-fabrication': [
-      { value: 'mild-steel', label: 'Mild Steel', description: 'Most common choice' },
-      { value: 'stainless-steel', label: 'Stainless Steel', description: 'Corrosion resistant' },
-      { value: 'aluminum', label: 'Aluminum', description: 'Lightweight option' },
-      { value: 'brass', label: 'Brass', description: 'Decorative applications' },
-      { value: 'copper', label: 'Copper', description: 'Electrical applications' }
+   'versa-laser': [
+      { value: 'acrylic', label: 'Acrylic', description: 'Clear, colored & frosted sheets' },
+      { value: 'wood', label: 'Wood', description: 'Plywood, MDF, hardwood' },
+      { value: 'leather', label: 'Leather', description: 'Custom designs & patterns' },
+      { value: 'glass', label: 'Glass', description: 'Engraving applications' },
+      { value: 'fabric', label: 'Fabric', description: 'Cotton, denim, linen' }
     ],
     'cnc-machining': [
       { value: 'aluminum', label: 'Aluminum', description: 'Easy to machine' },
@@ -35,11 +35,11 @@ const ProjectDetailsStep = ({
       { value: 'brass', label: 'Brass', description: 'Good machinability' },
       { value: 'plastic', label: 'Engineering Plastics', description: 'Various types available' }
     ],
-    'sheet-metal': [
-      { value: 'galvanized', label: 'Galvanized Steel', description: 'Rust resistant' },
-      { value: 'mild-steel', label: 'Mild Steel', description: 'Cost effective' },
-      { value: 'stainless', label: 'Stainless Steel', description: 'Premium finish' },
-      { value: 'aluminum', label: 'Aluminum Sheet', description: 'Lightweight' }
+   'large-format-printing': [
+      { value: 'vinyl-banner', label: 'Vinyl Banner', description: 'Durable outdoor use' },
+      { value: 'canvas', label: 'Canvas', description: 'High-quality prints' },
+      { value: 'pvc-board', label: 'PVC Board', description: 'Rigid signage' },
+      { value: 'fabric', label: 'Fabric', description: 'Smooth finish' }
     ],
     'signage': [
       { value: 'acrylic', label: 'Acrylic', description: 'Clear or colored' },
@@ -47,11 +47,11 @@ const ProjectDetailsStep = ({
       { value: 'steel', label: 'Steel', description: 'Durable outdoor use' },
       { value: 'wood', label: 'Wood', description: 'Natural appearance' }
     ],
-    'prototyping': [
-      { value: 'pla', label: 'PLA Plastic', description: '3D printing material' },
-      { value: 'abs', label: 'ABS Plastic', description: 'Stronger than PLA' },
-      { value: 'aluminum', label: 'Aluminum', description: 'Metal prototypes' },
-      { value: 'resin', label: 'Resin', description: 'High detail printing' }
+'uv-printing': [
+      { value: 'acrylic', label: 'Acrylic', description: 'Clear & colored sheets' },
+      { value: 'aluminum', label: 'Aluminum', description: 'Metal signage' },
+      { value: 'glass', label: 'Glass', description: 'Premium applications' },
+      { value: 'ceramic', label: 'Ceramic', description: 'Decorative items' }
     ]
   };
 

@@ -13,11 +13,11 @@ const ServiceSelectionStep = ({ selectedService, onServiceSelect, onNext }) => {
       popular: true
     },
     {
-      id: 'metal-fabrication',
-      name: 'Metal Fabrication',
+      id: 'versa-laser',
+      name: 'Versa Laser',
       icon: 'Wrench',
-      description: 'Custom metalwork including welding and assembly',
-      features: ['Welding', 'Bending', 'Assembly'],
+      description: 'Advanced CO2 laser cutting and engraving with precision optics',
+      features: ['CO2 Technology', 'Precision Optics', 'Multi-Material'],
       popular: false
     },
     {
@@ -29,11 +29,11 @@ const ServiceSelectionStep = ({ selectedService, onServiceSelect, onNext }) => {
       popular: false
     },
     {
-      id: 'sheet-metal',
-      name: 'Sheet Metal Work',
+      id: 'large-format-printing',
+      name: 'Large Format Printing',
       icon: 'Square',
-      description: 'Forming, bending, and shaping of sheet metal',
-      features: ['Forming', 'Punching', 'Rolling'],
+      description: 'High-impact wide format printing for banners and signage',
+      features: ['Wide Format', 'High Resolution', 'Durable Materials'],
       popular: true
     },
     {
@@ -45,11 +45,11 @@ const ServiceSelectionStep = ({ selectedService, onServiceSelect, onNext }) => {
       popular: false
     },
     {
-      id: 'prototyping',
-      name: 'Rapid Prototyping',
+      id: 'uv-printing',
+      name: 'UV Printing',
       icon: 'Lightbulb',
-      description: 'Quick turnaround for product development and testing',
-      features: ['Fast delivery', 'Multiple materials', 'Iterative design'],
+      description: 'Instant-curing UV printing on diverse materials and custom products',
+      features: ['Multiple Materials', 'Instant Curing', 'Custom Products'],
       popular: false
     }
   ];

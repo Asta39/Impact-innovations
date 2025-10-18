@@ -272,10 +272,10 @@ const TestimonialsCarousel = () => {
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
               >
                 <Icon name="Phone" size={20} />
-                Call +254 700 123 456
+                Call +254 708 071 047
               </a>
               <button
-                onClick={() => window.open('https://wa.me/254700123456', '_blank')}
+                onClick={() => window.open('https://wa.me/254708071047', '_blank')}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors font-medium"
               >
                 <Icon name="MessageCircle" size={20} />

@@ -6,35 +6,35 @@ const CompanyTimeline = () => {
 
   const timelineData = [
     {
-      year: 2009,
+      year: 2018,
       title: "Foundation & First Steps",
       description: "Impact Innovations was founded with a vision to revolutionize manufacturing in Kenya. Started with basic cutting services in a small workshop.",
       achievements: ["First laser cutting machine installed", "5 initial clients secured", "Team of 3 skilled technicians"],
       icon: "Rocket"
     },
     {
-      year: 2012,
+      year: 2019,
       title: "Expansion & Growth",
       description: "Expanded operations with advanced fabrication equipment and moved to a larger facility to meet growing demand.",
       achievements: ["New 2,000 sq ft facility", "Advanced welding equipment", "50+ completed projects"],
       icon: "TrendingUp"
     },
     {
-      year: 2015,
+      year: 2020,
       title: "Technology Advancement",
       description: "Invested in cutting-edge laser technology and CNC machines, establishing ourselves as a premium service provider.",
       achievements: ["High-precision laser systems", "CNC machining capabilities", "ISO 9001 certification"],
       icon: "Cog"
     },
     {
-      year: 2018,
+      year: 2021,
       title: "Market Leadership",
       description: "Became the go-to fabrication partner for major Kenyan businesses, handling complex industrial projects.",
       achievements: ["500+ projects completed", "20+ team members", "Major corporate clients"],
       icon: "Award"
     },
     {
-      year: 2021,
+      year: 2023,
       title: "Digital Transformation",
       description: "Embraced digital workflows and online customer engagement, making our services more accessible.",
       achievements: ["Digital design platform", "Online quote system", "Remote consultation services"],
@@ -59,7 +59,7 @@ const CompanyTimeline = () => {
             <span className="text-sm font-medium text-primary">Our Journey</span>
           </div>
           <h2 className="text-3xl lg:text-4xl font-heading font-bold text-foreground mb-4">
-            15 Years of Manufacturing Excellence
+            7 Years of Manufacturing Excellence
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             From humble beginnings to industry leadership, discover the milestones that shaped Impact Innovations into Kenya's premier fabrication specialist.
